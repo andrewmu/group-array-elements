@@ -17,7 +17,7 @@
 
 const groupArrayElements = (array, n) => {
   if (!(array instanceof Array)) throw new Error();
-  if (!Number.isFinite(n) || n <= 0) throw new Error();
+  if (!Number.isInteger(n) || n <= 0) throw new Error();
 
   const partsLength = Math.ceil(array.length / n);
   return Array.from(

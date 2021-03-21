@@ -30,6 +30,7 @@ describe(groupArrayElements.name, () => {
     expect(() => groupArrayElements([1, 2, 3, 4, 5], -1)).toThrow();
     expect(() => groupArrayElements([1, 2, 3, 4, 5], undefined)).toThrow();
     expect(() => groupArrayElements([1, 2, 3, 4, 5], NaN)).toThrow();
+    expect(() => groupArrayElements([1, 2, 3, 4, 5], 3.14)).toThrow();
     expect(() => groupArrayElements([1, 2, 3, 4, 5], Infinity)).toThrow();
     expect(() => groupArrayElements([1, 2, 3, 4, 5], -Infinity)).toThrow();
   });
